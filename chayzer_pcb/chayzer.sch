@@ -1,0 +1,618 @@
+EESchema Schematic File Version 4
+LIBS:chayzer-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR0101
+U 1 1 60D53ACC
+P 3450 1450
+F 0 "#PWR0101" H 3450 1300 50  0001 C CNN
+F 1 "+5V" H 3465 1623 50  0000 C CNN
+F 2 "" H 3450 1450 50  0001 C CNN
+F 3 "" H 3450 1450 50  0001 C CNN
+	1    3450 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L chayzer-rescue:ProMicro-promicro U1
+U 1 1 60D57CF4
+P 2500 2400
+F 0 "U1" H 2500 3437 60  0000 C CNN
+F 1 "ProMicro" H 2500 3331 60  0000 C CNN
+F 2 "promicro:ProMicro" H 2600 1350 60  0001 C CNN
+F 3 "" H 2600 1350 60  0000 C CNN
+	1    2500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 60D5522F
+P 3300 1350
+F 0 "#PWR0102" H 3300 1100 50  0001 C CNN
+F 1 "GND" H 3305 1177 50  0000 C CNN
+F 2 "" H 3300 1350 50  0001 C CNN
+F 3 "" H 3300 1350 50  0001 C CNN
+	1    3300 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1450 3450 1650
+Wire Wire Line
+	3450 1650 3200 1650
+$Comp
+L chayzer-rescue:MX-NoLED-MX_Alps_Hybrid MX_S1
+U 1 1 60D66324
+P 4150 1550
+F 0 "MX_S1" H 4183 1773 60  0000 C CNN
+F 1 "MX-NoLED" H 4183 1699 20  0000 C CNN
+F 2 "keyswitches:Kailh_socket_MX_optional" H 3525 1525 60  0001 C CNN
+F 3 "" H 3525 1525 60  0001 C CNN
+	1    4150 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L chayzer-rescue:MX-NoLED-MX_Alps_Hybrid MX_T1
+U 1 1 60D66DC6
+P 4550 1550
+F 0 "MX_T1" H 4583 1773 60  0000 C CNN
+F 1 "MX-NoLED" H 4583 1699 20  0000 C CNN
+F 2 "keyswitches:Kailh_socket_MX_optional" H 3925 1525 60  0001 C CNN
+F 3 "" H 3925 1525 60  0001 C CNN
+	1    4550 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L chayzer-rescue:MX-NoLED-MX_Alps_Hybrid MX_R1
+U 1 1 60D67114
+P 4950 1550
+F 0 "MX_R1" H 4983 1773 60  0000 C CNN
+F 1 "MX-NoLED" H 4983 1699 20  0000 C CNN
+F 2 "keyswitches:Kailh_socket_MX_optional" H 4325 1525 60  0001 C CNN
+F 3 "" H 4325 1525 60  0001 C CNN
+	1    4950 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L chayzer-rescue:MX-NoLED-MX_Alps_Hybrid MX_A1
+U 1 1 60D67723
+P 5350 1550
+F 0 "MX_A1" H 5383 1773 60  0000 C CNN
+F 1 "MX-NoLED" H 5383 1699 20  0000 C CNN
+F 2 "keyswitches:Kailh_socket_MX_optional" H 4725 1525 60  0001 C CNN
+F 3 "" H 4725 1525 60  0001 C CNN
+	1    5350 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L chayzer-rescue:SSD1306-SSD1306-128x64_OLED OLED1
+U 1 1 60D79405
+P 5950 1650
+F 0 "OLED1" H 6228 1754 50  0000 L CNN
+F 1 "SSD1306" H 6228 1663 50  0000 L CNN
+F 2 "SSD1306:128x64OLED" H 5950 1900 50  0001 C CNN
+F 3 "" H 5950 1900 50  0001 C CNN
+	1    5950 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D_T1
+U 1 1 60D7EF6F
+P 4500 1950
+F 0 "D_T1" H 4550 2050 50  0000 R CNN
+F 1 "D_Small" H 4650 1850 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4500 1950 50  0001 C CNN
+F 3 "~" V 4500 1950 50  0001 C CNN
+	1    4500 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D_R1
+U 1 1 60D7F4C0
+P 4900 1950
+F 0 "D_R1" H 4900 2050 50  0000 C CNN
+F 1 "D_Small" H 4900 1850 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4900 1950 50  0001 C CNN
+F 3 "~" V 4900 1950 50  0001 C CNN
+	1    4900 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D_A1
+U 1 1 60D7FA5C
+P 5300 1950
+F 0 "D_A1" H 5300 2050 50  0000 C CNN
+F 1 "D_Small" H 5300 1850 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 5300 1950 50  0001 C CNN
+F 3 "~" V 5300 1950 50  0001 C CNN
+	1    5300 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D_S1
+U 1 1 60D7DD0B
+P 4100 1950
+F 0 "D_S1" H 4150 2050 50  0000 R CNN
+F 1 "D_Small" H 4250 1850 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4100 1950 50  0001 C CNN
+F 3 "~" V 4100 1950 50  0001 C CNN
+	1    4100 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW_RES1
+U 1 1 60DA0F49
+P 5050 950
+F 0 "SW_RES1" H 5050 1235 50  0000 C CNN
+F 1 "SW_Push" H 5050 1144 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 5050 1150 50  0001 C CNN
+F 3 "~" H 5050 1150 50  0001 C CNN
+	1    5050 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 950  4800 950 
+Wire Wire Line
+	3600 950  3600 1750
+Wire Wire Line
+	5250 950  5250 1000
+Wire Wire Line
+	5250 1000 3650 1000
+Wire Wire Line
+	3650 1000 3650 1850
+Wire Wire Line
+	3650 1850 3200 1850
+Wire Wire Line
+	5800 1300 5800 1050
+Wire Wire Line
+	4800 1050 4800 950 
+Connection ~ 4800 950 
+Wire Wire Line
+	4800 950  3600 950 
+Wire Wire Line
+	5900 1300 5900 1100
+Wire Wire Line
+	3700 1100 3700 1950
+Wire Wire Line
+	3700 1950 3200 1950
+Wire Wire Line
+	3200 1750 3300 1750
+Wire Wire Line
+	3300 1350 3300 1750
+Connection ~ 3300 1750
+Wire Wire Line
+	3300 1750 3600 1750
+Wire Wire Line
+	4100 1700 4100 1850
+Wire Wire Line
+	4500 1700 4500 1850
+Wire Wire Line
+	4900 1700 4900 1850
+Wire Wire Line
+	5300 1700 5300 1850
+Wire Wire Line
+	5300 2050 4900 2050
+Connection ~ 4500 2050
+Wire Wire Line
+	4500 2050 4100 2050
+Connection ~ 4900 2050
+Wire Wire Line
+	4900 2050 4500 2050
+Wire Wire Line
+	6000 1300 6000 1150
+Wire Wire Line
+	1550 1150 1550 2150
+Wire Wire Line
+	1550 2150 1800 2150
+Wire Wire Line
+	6100 1300 6100 1200
+Wire Wire Line
+	1650 1200 1650 2050
+Wire Wire Line
+	1650 2050 1800 2050
+Connection ~ 5300 3150
+Connection ~ 5950 3300
+Wire Wire Line
+	5300 3300 5300 3150
+Wire Wire Line
+	5950 3300 5300 3300
+Wire Wire Line
+	6550 3300 6550 3600
+Connection ~ 6550 3300
+Wire Wire Line
+	6550 2950 6550 3300
+Wire Wire Line
+	6550 3600 7050 3600
+Wire Wire Line
+	5950 3300 6550 3300
+Wire Wire Line
+	6550 2550 6550 2750
+Wire Wire Line
+	7050 3250 7050 3400
+Wire Wire Line
+	5950 2950 5950 3100
+Wire Wire Line
+	4900 3150 4500 3150
+Connection ~ 4900 3150
+Wire Wire Line
+	4500 3150 4100 3150
+Connection ~ 4500 3150
+Wire Wire Line
+	5300 3150 4900 3150
+Wire Wire Line
+	5300 2800 5300 2950
+Wire Wire Line
+	4900 2800 4900 2950
+Wire Wire Line
+	4500 2800 4500 2950
+Wire Wire Line
+	4100 2800 4100 2950
+$Comp
+L Device:D_Small D_AUD1
+U 1 1 60D82A6A
+P 6550 2850
+F 0 "D_AUD1" H 6550 2950 50  0000 C CNN
+F 1 "D_Small" H 6550 2750 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 6550 2850 50  0001 C CNN
+F 3 "~" V 6550 2850 50  0001 C CNN
+	1    6550 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D_AL1
+U 1 1 60D823ED
+P 7050 3500
+F 0 "D_AL1" H 7150 3600 50  0000 R CNN
+F 1 "D_Small" H 7200 3400 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 7050 3500 50  0001 C CNN
+F 3 "~" V 7050 3500 50  0001 C CNN
+	1    7050 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D_SH1
+U 1 1 60D81D2F
+P 5950 3200
+F 0 "D_SH1" H 6050 3300 50  0000 R CNN
+F 1 "D_Small" H 6050 3100 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 5950 3200 50  0001 C CNN
+F 3 "~" V 5950 3200 50  0001 C CNN
+	1    5950 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D_E1
+U 1 1 60D815EF
+P 5300 3050
+F 0 "D_E1" H 5350 3150 50  0000 R CNN
+F 1 "D_Small" H 5450 2950 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 5300 3050 50  0001 C CNN
+F 3 "~" V 5300 3050 50  0001 C CNN
+	1    5300 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D_Y1
+U 1 1 60D80F31
+P 4900 3050
+F 0 "D_Y1" H 4950 3150 50  0000 R CNN
+F 1 "D_Small" H 5050 2950 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4900 3050 50  0001 C CNN
+F 3 "~" V 4900 3050 50  0001 C CNN
+	1    4900 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D_I1
+U 1 1 60D80945
+P 4500 3050
+F 0 "D_I1" H 4550 3150 50  0000 R CNN
+F 1 "D_Small" H 4650 2950 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4500 3050 50  0001 C CNN
+F 3 "~" V 4500 3050 50  0001 C CNN
+	1    4500 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D_O1
+U 1 1 60D7FEA9
+P 4100 3050
+F 0 "D_O1" H 4150 3150 50  0000 R CNN
+F 1 "D_Small" H 4250 2950 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 4100 3050 50  0001 C CNN
+F 3 "~" V 4100 3050 50  0001 C CNN
+	1    4100 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L chayzer-rescue:MX-NoLED-MX_Alps_Hybrid MX_AL1
+U 1 1 60D6E929
+P 7100 3100
+F 0 "MX_AL1" H 7133 3323 60  0000 C CNN
+F 1 "MX-NoLED" H 7133 3249 20  0000 C CNN
+F 2 "keyswitches:Kailh_socket_MX_optional" H 6475 3075 60  0001 C CNN
+F 3 "" H 6475 3075 60  0001 C CNN
+	1    7100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L chayzer-rescue:MX-NoLED-MX_Alps_Hybrid MX_SH1
+U 1 1 60D6E4B9
+P 6000 2800
+F 0 "MX_SH1" H 6000 2950 60  0000 C CNN
+F 1 "MX-NoLED" V 5850 2800 20  0000 C CNN
+F 2 "keyswitches:Kailh_socket_MX_optional" H 5375 2775 60  0001 C CNN
+F 3 "" H 5375 2775 60  0001 C CNN
+	1    6000 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L chayzer-rescue:MX-NoLED-MX_Alps_Hybrid MX_E1
+U 1 1 60D68947
+P 5350 2650
+F 0 "MX_E1" H 5383 2873 60  0000 C CNN
+F 1 "MX-NoLED" H 5383 2799 20  0000 C CNN
+F 2 "keyswitches:Kailh_socket_MX_optional" H 4725 2625 60  0001 C CNN
+F 3 "" H 4725 2625 60  0001 C CNN
+	1    5350 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L chayzer-rescue:MX-NoLED-MX_Alps_Hybrid MX_Y1
+U 1 1 60D6856D
+P 4950 2650
+F 0 "MX_Y1" H 4983 2873 60  0000 C CNN
+F 1 "MX-NoLED" H 4983 2799 20  0000 C CNN
+F 2 "keyswitches:Kailh_socket_MX_optional" H 4325 2625 60  0001 C CNN
+F 3 "" H 4325 2625 60  0001 C CNN
+	1    4950 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L chayzer-rescue:MX-NoLED-MX_Alps_Hybrid MX_I1
+U 1 1 60D680FD
+P 4550 2650
+F 0 "MX_I1" H 4583 2873 60  0000 C CNN
+F 1 "MX-NoLED" H 4583 2799 20  0000 C CNN
+F 2 "keyswitches:Kailh_socket_MX_optional" H 3925 2625 60  0001 C CNN
+F 3 "" H 3925 2625 60  0001 C CNN
+	1    4550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L chayzer-rescue:MX-NoLED-MX_Alps_Hybrid MX_O1
+U 1 1 60D67C24
+P 4150 2650
+F 0 "MX_O1" H 4183 2873 60  0000 C CNN
+F 1 "MX-NoLED" H 4183 2799 20  0000 C CNN
+F 2 "keyswitches:Kailh_socket_MX_optional" H 3525 2625 60  0001 C CNN
+F 3 "" H 3525 2625 60  0001 C CNN
+	1    4150 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Rotary_Encoder_Switch SW_AUD1
+U 1 1 60D63F54
+P 6450 2250
+F 0 "SW_AUD1" H 6300 2600 50  0000 L CNN
+F 1 "Rotary_Encoder_Switch" H 6050 2500 50  0000 L CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm" H 6300 2410 50  0001 C CNN
+F 3 "~" H 6450 2510 50  0001 C CNN
+	1    6450 2250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1800 1650
+NoConn ~ 1800 1750
+NoConn ~ 1800 1950
+NoConn ~ 3200 2650
+NoConn ~ 3200 2550
+NoConn ~ 3200 2450
+Wire Wire Line
+	6750 2150 6850 2150
+Wire Wire Line
+	6850 2150 6850 2550
+Wire Wire Line
+	6850 2550 6550 2550
+Wire Wire Line
+	5800 1050 5600 1050
+Wire Wire Line
+	5900 1100 3700 1100
+Wire Wire Line
+	6000 1150 1550 1150
+Wire Wire Line
+	6100 1200 1650 1200
+Wire Wire Line
+	1800 2250 1550 2250
+Wire Wire Line
+	1550 2250 1550 3000
+Wire Wire Line
+	1550 3000 3850 3000
+Wire Wire Line
+	3850 2050 4100 2050
+Connection ~ 4100 2050
+Wire Wire Line
+	5500 1500 5500 2300
+Wire Wire Line
+	5100 1500 5100 2250
+Wire Wire Line
+	4700 1500 4700 2200
+Wire Wire Line
+	4300 1500 4300 2150
+Wire Wire Line
+	1800 2350 1600 2350
+Wire Wire Line
+	1600 2350 1600 3150
+Wire Wire Line
+	1600 3150 4100 3150
+Connection ~ 4100 3150
+Wire Wire Line
+	1800 2450 1650 2450
+Wire Wire Line
+	1650 2450 1650 3100
+Wire Wire Line
+	1650 3100 3950 3100
+Wire Wire Line
+	3950 2150 4300 2150
+Connection ~ 4300 2150
+Wire Wire Line
+	4300 2150 4300 2600
+Wire Wire Line
+	3950 3100 3950 2150
+Wire Wire Line
+	1800 2550 1700 2550
+Wire Wire Line
+	1700 2550 1700 3050
+Wire Wire Line
+	1700 3050 3900 3050
+Wire Wire Line
+	3900 2200 4700 2200
+Wire Wire Line
+	3900 2200 3900 3050
+Connection ~ 4700 2200
+Wire Wire Line
+	4700 2200 4700 2600
+Wire Wire Line
+	3850 3000 3850 2050
+Wire Wire Line
+	1800 2650 1750 2650
+Wire Wire Line
+	1750 2650 1750 2950
+Wire Wire Line
+	1750 2950 3800 2950
+Wire Wire Line
+	3800 2950 3800 2250
+Wire Wire Line
+	3800 2250 5100 2250
+Connection ~ 5100 2250
+Wire Wire Line
+	5100 2250 5100 2600
+Wire Wire Line
+	1800 2750 1800 2900
+Wire Wire Line
+	1800 2900 3750 2900
+Wire Wire Line
+	3750 2900 3750 2300
+Wire Wire Line
+	3750 2300 5500 2300
+Connection ~ 5500 2300
+Wire Wire Line
+	5500 2300 5500 2600
+Wire Wire Line
+	3200 2050 3450 2050
+Wire Wire Line
+	3450 2050 3450 3450
+Wire Wire Line
+	3450 3450 6150 3450
+Wire Wire Line
+	6150 3450 6150 2750
+Wire Wire Line
+	3200 2150 3400 2150
+Wire Wire Line
+	3400 2150 3400 3500
+Wire Wire Line
+	3400 3500 6750 3500
+Wire Wire Line
+	6750 3500 6750 2350
+Wire Wire Line
+	3200 2250 3350 2250
+Wire Wire Line
+	3350 2250 3350 3700
+Wire Wire Line
+	3350 3700 7250 3700
+Wire Wire Line
+	7250 3700 7250 3050
+Wire Wire Line
+	3200 2350 3300 2350
+Wire Wire Line
+	3300 2350 3300 3600
+Wire Wire Line
+	3300 3600 5700 3600
+Wire Wire Line
+	5700 3600 5700 2150
+Wire Wire Line
+	5700 2150 6150 2150
+Wire Wire Line
+	6150 2250 5600 2250
+Wire Wire Line
+	5600 2250 5600 1050
+Connection ~ 5600 1050
+Wire Wire Line
+	5600 1050 4800 1050
+Wire Wire Line
+	3200 2750 3250 2750
+Wire Wire Line
+	3250 2750 3250 3650
+Wire Wire Line
+	3250 3650 5750 3650
+Wire Wire Line
+	5750 3650 5750 2350
+Wire Wire Line
+	5750 2350 6150 2350
+NoConn ~ 1800 1850
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 60E038D0
+P 7350 1750
+F 0 "H1" H 7450 1796 50  0001 L CNN
+F 1 "MountingHole" H 7450 1705 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7350 1750 50  0001 C CNN
+F 3 "~" H 7350 1750 50  0001 C CNN
+	1    7350 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 60E03EBD
+P 7350 1950
+F 0 "H2" H 7450 1996 50  0001 L CNN
+F 1 "MountingHole" H 7450 1905 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7350 1950 50  0001 C CNN
+F 3 "~" H 7350 1950 50  0001 C CNN
+	1    7350 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 60E04601
+P 7350 2150
+F 0 "H3" H 7450 2196 50  0001 L CNN
+F 1 "MountingHole" H 7450 2105 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7350 2150 50  0001 C CNN
+F 3 "~" H 7350 2150 50  0001 C CNN
+	1    7350 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 60E04F99
+P 7350 2350
+F 0 "H4" H 7450 2396 50  0001 L CNN
+F 1 "MountingHole" H 7450 2305 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7350 2350 50  0001 C CNN
+F 3 "~" H 7350 2350 50  0001 C CNN
+	1    7350 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 60E05422
+P 7350 2550
+F 0 "H5" H 7450 2596 50  0001 L CNN
+F 1 "MountingHole" H 7450 2505 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 7350 2550 50  0001 C CNN
+F 3 "~" H 7350 2550 50  0001 C CNN
+	1    7350 2550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,7 @@
+Plot file “C:\Users\radio\projects\chayzer_pcb\gerber\chayzer-F_Cu.gbr” created.
+Plot file “C:\Users\radio\projects\chayzer_pcb\gerber\chayzer-B_Cu.gbr” created.
+Plot file “C:\Users\radio\projects\chayzer_pcb\gerber\chayzer-F_SilkS.gbr” created.
+Plot file “C:\Users\radio\projects\chayzer_pcb\gerber\chayzer-B_SilkS.gbr” created.
+Plot file “C:\Users\radio\projects\chayzer_pcb\gerber\chayzer-F_Mask.gbr” created.
+Plot file “C:\Users\radio\projects\chayzer_pcb\gerber\chayzer-B_Mask.gbr” created.
+Plot file “C:\Users\radio\projects\chayzer_pcb\gerber\chayzer-Edge_Cuts.gbr” created.
