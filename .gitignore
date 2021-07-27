@@ -18,7 +18,7 @@
 *.pch
 
 # Libraries
-*.lib
+# *.lib
 *.a
 *.la
 *.lo
@@ -79,7 +79,7 @@ dkms.conf
 *.lai
 *.la
 *.a
-*.lib
+# *.lib
 
 # Executables
 *.exe

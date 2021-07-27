@@ -1,7 +1,7 @@
 (sym_lib_table
-  (lib (name random-keyboard-parts)(type Legacy)(uri "C:/Users/radio/Desktop/Recent Projects/random-keyboard-parts.pretty-master/random-keyboard-parts.pretty-master/Schematic Library/random-keyboard-parts.lib")(options "")(descr ""))
+  (lib (name random-keyboard-parts)(type Legacy)(uri "libraries/random-keyboard-parts.pretty-master/random-keyboard-parts.pretty-master/Schematic Library/random-keyboard-parts.lib")(options "")(descr ""))
   (lib (name MX_Alps_Hybrid)(type Legacy)(uri "C:/Users/radio/Desktop/Recent Projects/MX_Alps_Hybrid-master/MX_Alps_Hybrid-master/Schematic Library/MX_Alps_Hybrid.lib")(options "")(descr ""))
-  (lib (name promicro)(type Legacy)(uri "C:/Users/radio/Desktop/Recent Projects/ProMicroKiCad-master/ProMicroKiCad-master/promicro_library/promicro.lib")(options "")(descr ""))
+  (lib (name promicro)(type Legacy)(uri C:/Users/radio/projects/github/chayzer/chayzer_pcb/libraries/ProMicroKiCad-master/promicro_library/promicro.lib)(options "")(descr ""))
   (lib (name SSD1306-128x64_OLED)(type Legacy)(uri C:/Users/radio/Desktop/kicrap/SSD1306-128x64-master/library/SSD1306-128x64_OLED.lib)(options "")(descr ""))
   (lib (name chayzer-rescue)(type Legacy)(uri ${KIPRJMOD}/chayzer-rescue.lib)(options "")(descr ""))
 )
