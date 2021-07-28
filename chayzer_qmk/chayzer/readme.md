@@ -10,7 +10,7 @@
 
 Make example for this keyboard (after setting up your build environment):
 
-    make chayzer:default
+    make chayzer:artsey_left
 
 Flashing example for this keyboard:
 
