@@ -1,7 +1,7 @@
 # chayzer
 Go in to the individual directories for more information
 
-Chayzer Chording keyboard
+### Chayzer Chording keyboard
 
 Board that I designed to be used with the https://artsey.io chording layout. Of course this can be modified to work in other ways "macro pad" etc.
 
