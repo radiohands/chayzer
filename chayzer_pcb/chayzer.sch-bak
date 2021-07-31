@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:chayzer-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+5V #PWR0101
-U 1 1 60D53ACC
-P 4700 3000
-F 0 "#PWR0101" H 4700 2850 50  0001 C CNN
-F 1 "+5V" H 4715 3173 50  0000 C CNN
-F 2 "" H 4700 3000 50  0001 C CNN
-F 3 "" H 4700 3000 50  0001 C CNN
-	1    4700 3000
-	1    0    0    -1  
-$EndComp
-$Comp
 L chayzer-rescue:ProMicro-promicro U1
 U 1 1 60D57CF4
 P 3750 3950
@@ -38,18 +28,14 @@ $EndComp
 $Comp
 L power:GND #PWR0102
 U 1 1 60D5522F
-P 4550 2900
-F 0 "#PWR0102" H 4550 2650 50  0001 C CNN
-F 1 "GND" H 4555 2727 50  0000 C CNN
-F 2 "" H 4550 2900 50  0001 C CNN
-F 3 "" H 4550 2900 50  0001 C CNN
-	1    4550 2900
+P 4050 2500
+F 0 "#PWR0102" H 4050 2250 50  0001 C CNN
+F 1 "GND" H 4055 2327 50  0000 C CNN
+F 2 "" H 4050 2500 50  0001 C CNN
+F 3 "" H 4050 2500 50  0001 C CNN
+	1    4050 2500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4700 3000 4700 3200
-Wire Wire Line
-	4700 3200 4450 3200
 $Comp
 L chayzer-rescue:MX-NoLED-MX_Alps_Hybrid MX_S1
 U 1 1 60D66324
@@ -169,13 +155,6 @@ Wire Wire Line
 Connection ~ 6050 2500
 Wire Wire Line
 	6050 2500 4850 2500
-Wire Wire Line
-	4450 3300 4550 3300
-Wire Wire Line
-	4550 2900 4550 3300
-Connection ~ 4550 3300
-Wire Wire Line
-	4550 3300 4850 3300
 Wire Wire Line
 	5350 3250 5350 3400
 Wire Wire Line
@@ -388,7 +367,6 @@ NoConn ~ 3050 3300
 NoConn ~ 3050 3500
 NoConn ~ 4450 4200
 NoConn ~ 4450 4100
-NoConn ~ 4450 4000
 Wire Wire Line
 	5100 3600 5350 3600
 Connection ~ 5350 3600
@@ -556,4 +534,106 @@ Text GLabel 7400 3900 0    50   Input ~ 0
 B6
 Text GLabel 4450 4300 2    50   Input ~ 0
 B6
+$Comp
+L LED:SK6812MINI RGB1
+U 1 1 61032E51
+P 3950 5550
+F 0 "RGB1" H 3850 6050 50  0000 L CNN
+F 1 "SK6812MINI" H 3750 5950 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 4000 5250 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 4050 5175 50  0001 L TNN
+	1    3950 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3300 4850 3300
+$Comp
+L power:+5V #PWR0101
+U 1 1 60D53ACC
+P 4550 2600
+F 0 "#PWR0101" H 4550 2450 50  0001 C CNN
+F 1 "+5V" H 4565 2773 50  0000 C CNN
+F 2 "" H 4550 2600 50  0001 C CNN
+F 3 "" H 4550 2600 50  0001 C CNN
+	1    4550 2600
+	1    0    0    -1  
+$EndComp
+Text GLabel 4450 3200 2    50   Input ~ 0
+5v
+Text GLabel 4850 2850 0    50   Input ~ 0
+GND
+Text GLabel 4550 2600 3    50   Input ~ 0
+5v
+Text GLabel 4050 2500 1    50   Input ~ 0
+GND
+$Comp
+L LED:SK6812MINI RGB2
+U 1 1 6103E43F
+P 4750 5550
+F 0 "RGB2" H 4650 6050 50  0000 L CNN
+F 1 "SK6812MINI" H 4550 5950 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 4800 5250 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 4850 5175 50  0001 L TNN
+	1    4750 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812MINI RGB3
+U 1 1 6103F28F
+P 5550 5550
+F 0 "RGB3" H 5450 6050 50  0000 L CNN
+F 1 "SK6812MINI" H 5350 5950 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 5600 5250 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 5650 5175 50  0001 L TNN
+	1    5550 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:SK6812MINI RGB4
+U 1 1 6103FF53
+P 6350 5550
+F 0 "RGB4" H 6250 6050 50  0000 L CNN
+F 1 "SK6812MINI" H 6150 5950 50  0000 L CNN
+F 2 "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm" H 6400 5250 50  0001 L TNN
+F 3 "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf" H 6450 5175 50  0001 L TNN
+	1    6350 5550
+	1    0    0    -1  
+$EndComp
+Text GLabel 4450 4000 2    50   Input ~ 0
+B1
+Text GLabel 3650 5550 0    50   Input ~ 0
+B1
+Wire Wire Line
+	4250 5550 4450 5550
+Wire Wire Line
+	5050 5550 5250 5550
+Wire Wire Line
+	5850 5550 6050 5550
+NoConn ~ 6650 5550
+Text GLabel 3700 5850 0    50   Input ~ 0
+GND
+Wire Wire Line
+	3700 5850 3950 5850
+Connection ~ 3950 5850
+Wire Wire Line
+	3950 5850 4750 5850
+Connection ~ 4750 5850
+Wire Wire Line
+	4750 5850 5550 5850
+Connection ~ 5550 5850
+Wire Wire Line
+	5550 5850 6350 5850
+Text GLabel 3650 5250 0    50   Input ~ 0
+5v
+Wire Wire Line
+	3650 5250 3950 5250
+Connection ~ 3950 5250
+Wire Wire Line
+	3950 5250 4750 5250
+Connection ~ 4750 5250
+Wire Wire Line
+	4750 5250 5550 5250
+Connection ~ 5550 5250
+Wire Wire Line
+	5550 5250 6350 5250
 $EndSCHEMATC

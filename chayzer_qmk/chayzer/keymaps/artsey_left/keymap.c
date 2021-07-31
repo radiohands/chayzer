@@ -36,10 +36,47 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 // ROTARY ENCODER WORK
 void encoder_update_user(int8_t index, bool clockwise) {
-    if (clockwise) {
-      tap_code(KC_AUDIO_VOL_UP);
-    } else {
-      tap_code(KC_AUDIO_VOL_DOWN);
-    }
-}
-
+    
+    switch (get_highest_layer(layer_state)) {
+        case _A_BASE:
+            if (clockwise) {
+                tap_code(KC_AUDIO_VOL_DOWN);
+            } else {
+                tap_code(KC_AUDIO_VOL_UP);
+            }
+            break;
+        case _A_NUM:
+            if (clockwise) {
+                // reserved for later
+            } else {
+                // reserved for later
+            }
+            break;
+        case _A_SYM:
+            if (clockwise) {
+                // reserved for later
+            } else {
+                // reserved for later
+            }
+            break;
+        case _A_BRAC:
+            if (clockwise) {
+                // reserved for later
+            } else {
+                // reserved for later
+            }
+            break;
+        case _A_CUSTOM:
+            if(clockwise) {
+                // reserved for later
+            } else {
+                // reserved for later
+            }
+        default:
+            if (clockwise) {
+                tap_code(KC_AUDIO_VOL_UP);
+            } else {
+                tap_code(KC_AUDIO_VOL_DOWN);
+            }
+    } // END SWITCH
+  }

@@ -64,3 +64,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define NO_ACTION_MACRO
 #define NO_ACTION_FUNCTION
 #define OLED_DISPLAY_128X64
+
+
+// RGB stuff, disabled until I can figure out why it's bugging out
+//#define RGB_DI_PIN B1
+//#define RGBLED_NUM 4
+//#define RGBLIGHT_HUE_STEP 5
+//#define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+//#define RGBLIGHT_EFFECT_KNIGHT
+//#define RGBLIGHT_SNAKE
+//#define RGBLIGHT_TWINKLE
